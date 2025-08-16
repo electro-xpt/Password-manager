@@ -3,12 +3,12 @@ import mysql.connector
 db = mysql.connector.connect(
     host="localhost",
     user="root",
-    passwd="kasim108",
-    database="passwd",
+    passwd="<your sql password>",
+    database="<your database name>",
     auth_plugin='mysql_native_password'
 )
  
-print("PLEASE MAKE SURE THAT YOU HAVE RUN \"setup.py\" BEFORE!!!!!")
+print("PLEASE MAKE SURE THAT YOU HAVE RUN \"password_manager.py\" BEFORE!!!!!")
 print(db)
 print("Successfully connected to the database")
  
@@ -351,3 +351,4 @@ def menu():
  
  
 mainmenu()
+
